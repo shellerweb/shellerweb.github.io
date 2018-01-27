@@ -1,0 +1,480 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  实战案例：非用研人员如何创建用户画像 - Sheller
+  
+  </title>
+  
+  
+  <link href="atom.xml" rel="alternate" title="Sheller" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+  <script src="asset/highlightjs/highlight.pack.js"></script>
+  <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+  function before_search(){
+    var searchVal = 'site:shellerweb.com ' + document.getElementById('search_input').value;
+    document.getElementById('search_q').value = searchVal;
+    return true;
+  }
+</script>
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+
+  <section class="top-bar-section">
+  <div class="row">
+      <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
+        <ul id="main-menu" class="left">
+        
+        <li id=""><a target="_self" href="index.html">Home</a></li>
+        
+        <li id=""><a target="_self" href="archives.html">Archives</a></li>
+        
+        <li id=""><a target="_self" href="about.html">about</a></li>
+        
+        </ul>
+
+        <ul class="right" id="search-wrap">
+          <li>
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
+    <input type="hidden" id="search_q" name="q" value="" />
+    <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
+</form>
+</li>
+          </ul>
+      </div></div>
+  </div>
+  </section>
+
+</nav>
+
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; Sheller</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+       
+       <li><a href="index.html">HOME</a></li>
+    <li><a href="archives.html">Archives</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+
+    <li><label>Categories</label></li>
+
+        
+            <li><a href="Study.html">Study</a></li>
+        
+            <li><a href="Photo.html">Photo</a></li>
+        
+            <li><a href="Book.html">Book</a></li>
+         
+
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+
+        <section id="main-content" role="main" class="scroll-container">
+        
+       
+
+ <script type="text/javascript">
+  $(function(){
+    $('#menu_item_index').addClass('is_active');
+  });
+</script>
+<div class="row">
+  <div class="large-8 medium-8 columns">
+      <div class="markdown-body article-wrap">
+       <div class="article">
+          
+          <h1>实战案例：非用研人员如何创建用户画像</h1>
+     
+        <div class="read-more clearfix">
+          <span class="date">2018/1/28 1:47 上午</span>
+
+          <span>posted in&nbsp;</span> 
+          
+              <span class="posted-in"><a href='Study.html'>Study</a></span>
+           
+         
+          <span class="comments">
+            
+              <a href="http://shellerweb.com/15170752718248.html#disqus_thread">comments</a>
+            
+
+            
+          </span>
+
+        </div>
+      </div><!-- article -->
+
+      <div class="article-content">
+      <p><img src="http://oeseln4ng.bkt.clouddn.com/14895967847354.jpg" alt=""/><br/>
+前言：关于用户画像的建立，网上有很多文章，方法也都不经相同。作为一枚非用研人员，第一次尝试做用户画像，在各种资源有限、经验有限的情况下，经历一次完整的研究过程并不容易，所谓最难跨出的永远是第一步。</p>
+
+<span id="more"></span><!-- more -->
+
+<p>本文只适合没有相关经验，一直想做用户画像而不得的童鞋，专业人士可绕过啦 _<sup> 。这里没有聚类分析、标签权重、亲和图等专业的算法研究，有的只是一枚交互如何从0到1建立画像的过程，也算是给自己近期工作做个总结。感谢小七前辈的耐心指点~</sup></p>
+
+<p>一、为什么想做用户画像<br/>
+我们的项目是一款移动视频应用，最开始想做用户画像，主要是想解决当前阶段，产品/设计/开发/运营在核心用户的理解上的分歧问题。</p>
+
+<p>比如由于受推广渠道影响，产品认为我们的用户年纪偏大，且呈现低学历的属性特点，其他职能可能认为用户偏年轻，且网络及产品使用习惯均有差异。因此，大家在后续要开放哪些功能（甚至是后续的收费方式上）无法达成一致，产品希望加入一些成熟用户更喜欢的内容。</p>
+
+<p>另外，由于受业务影响，产品们更多关心的是日活、新增、时长等业务数据，对真实渗透到用户行为上的数据，并不十分在意。但在交互上，清晰的用户画像和行为直接关系到具体的产品设计和表现，甚至是后续的产品规划、运营推广等。</p>
+
+<p>因此，本次的画像研究有两个主要目的：<br/>
+为了让项目相关人在核心用户上达成统一且具象的认知，方便在后续投入上有的放矢；<br/>
+详细了解我们的真实用户是如何和产品及其相关内容进行互动等。</p>
+
+<p>二、用户画像研究方法<br/>
+在开始做画像之前，我在各种书籍和网站收集相关实施方案，但发现内容不是偏于理论，就是脱离业务本身。结果就是：虽然看了很多资料，自己执行的时候，还是一脸懵逼（原谅小白的第一次T_T）。</p>
+
+<p>不过，过程还算有收获，如下图1所示，主要是根据不同的产品阶段配置不同的研究组合（这里列出的是常见的两种类型，并不全面，具体方法有多种，可根据实际的项目情况做调整）。比如立项阶段只做定性化的用户画像也是可以的，且用户画像的产出基本都是定量与定性的结合使用。<br/>
+<img src="http://oeseln4ng.bkt.clouddn.com/14895968261806.jpg" alt=""/></p>
+
+<p>由于我们的项目上线一年多，已具有一定的数据积累，因此，采用的是第二种研究组合。虽然方法有了，但是正真的难点在于，需要根据不同节点的研究目的，产出相关数据结果，下图2即是本次整个用户画像的研究过程，对应的每一阶段都有相应文档输出，这对于首次尝试的我来说是个不小的挑战。<br/>
+<img src="http://oeseln4ng.bkt.clouddn.com/14895968378582.jpg" alt=""/></p>
+
+<p>下面对具体的执行方式不做详细说明，而将重点放在，非用研人员在第一次做画像经常会遇到的问题上，毕竟在定量和定性的研究部分，很多资料和书籍远远比我专业。</p>
+
+<p>１.数据挖掘<br/>
+虽然产品已上线一年多，由于没有进行过系统的数据整理，各职能甚至产品之间出现信息断层，团队中很少有人能完全了解产品基本的用户情况，因此，对现有数据的清洗显的很有必要。</p>
+
+<p>首先对后台数据进行提取，比如Android和iOS端不同的使用时长、行为及内容偏好等，包括产品在第三方统计平台沉淀的数据，比如百度、友盟等平台，甚至是各种行业报告。通过对多方数据的假设和验证，最终得出整体的户群类型与规模，比如具体的用户年龄、性别、访问时段、行为偏好、转化情况等。</p>
+
+<p>此时的分析报告，虽然有实际的数据支撑，但由于我们自身数据结构不完善，也存在部分假设成分，尤其是在用户群的整体构成上，比如80和90后上班族、00后学生等比例及行为等，和真实情况会有偏差，这个时候的用户数据是比较散的。</p>
+
+<p>完成了数据挖掘阶段，本来可以直接根据结果数据显示，展开问卷调研，并对部分假设做验证，且能了解更多用户行为、目的、偏好等信息。但过程中发现光做一个用户画像，并不能达成目的。因为用户画像的应用场景，通常是建立在大家已经知道核心/大众/边缘的分布比例，需要统一对不同用户的认知，建立感性影响的阶段。另外，由于团队资源有限，对无法看到效果的产出都保持谨慎态度，因此还需要配合其他事项。</p>
+
+<p>切入点就是：由于产品们比较关心一些运营指标，比如日活用户、新增用户、使用时长等，可以从这方面入手，并获得资源支持。先将用户划分几个类别，如下图3所示。<br/>
+<img src="http://oeseln4ng.bkt.clouddn.com/14895968623120.jpg" alt=""/></p>
+
+<p>划分的原因，是为了和产品同步一些基础定义，比如“高活跃老用户”是我们的持续核心，“高活跃新用户”是新增核心等。同步了这些数据，就可以在该数据基础上做进一步白描。如图4形式，因为入手的是他们比较感兴趣的问题，所以开始没有很难。</p>
+
+<p>在这个过程中，使用的是性别和年龄作为维度来描述不同活跃用户的组成，输出的主要是一个属性分布，用来统一基础认知的，这里还没有到画像那么细的地步。当和产品达成一致以后，按照下图的整体规划开始进行问卷数据的收集。</p>
+
+<p>２.问卷调研<br/>
+关于不同活跃类型的用户数据，可以有多种来源，最靠谱的数据来源于日志，但是关于这部分我们是缺失的，所以只能靠问卷调研，即在app中投放问卷。关于问卷的具体设计此处略，主要说一下我在这个过程中遇到的几个关键问题：</p>
+
+<p>（1）问卷目的<br/>
+由于问卷调研本身的局限性，正常在app中投放的问卷，回收的数据一定是偏活跃用户数据，因为非活跃用户一般不会看到或填写，这也是问卷调研结果经常会遭到质疑的原因。但由于本次问卷目的本来就是为了研究活跃用户整体的社会属性、目的、行为、态度和观点等，也就是所谓的产品核心用户（上图中的1、2象限用户），所以问卷数据的参考价值还是比较大的。</p>
+
+<p>而非活跃用户并不属于本次调研重点，因为对非活跃用户的触达，需要定向激活方式，比如邮件、短信推送、电访等，但由于团队没有用研伙伴，并不具备这个资源和能力，只能将重心放在主要用户上。</p>
+
+<p>（2）如何划分活跃/新老用户<br/>
+对于活跃/新老用户的划分，不同的项目类型有不同的标准。作为交互设计师虽然有一个大体的概念，但如果要精确到具体的数据也并不清楚，所以需要先根据后台及项目本身预估一下，然后和业务方确认。比如用户的活跃度划分主要是根据使用时长和频率，但使用时长是周时长，还是日时长，根据项目来定。</p>
+
+<p>由于我们的项目属于视频类，按道理周使用时长更合理，因为不同类别的人群，可能使用时间是错开的，但是根据后台数据显示，用户在工作日和双休日使用时长并无明显差异，直接按照日使用时长就可以。因此最终的活跃/非活跃用户的划分标准如下图5所示。至于新老用户的划分，由于项目之前没用过这个指标，也是和产品沟通好以后确认的。<br/>
+<img src="http://oeseln4ng.bkt.clouddn.com/14895968859744.jpg" alt=""/></p>
+
+<p>（3）先梳理问题大纲再设计卷子<br/>
+很多非用研同学，第一次做卷子很容易陷入一个误区，就是缺乏对问卷的整体规划，直接上手就做，这会为后续数据分析埋下隐患，很容易导致问题不聚焦或无价值（同踩坑，幸好有前辈及时纠正_）。</p>
+
+<p>因此，在设计问卷之前，最好梳理好相关问题，以结果为导向，通过想得到的数据，设计相关问题，可以做一个大致的问卷提纲，然后将每一个想要的得到的信息一一对应，这样更加方便整理思路，甚至可以补充一些分析思路等，比如下图所示（这里只是一个例子，一张问卷中无非包含用户基本信息、目标、行为、观点、态度等，具体可根据实际项目做调整）。<br/>
+<img src="http://oeseln4ng.bkt.clouddn.com/14895969000752.jpg" alt=""/></p>
+
+<p>（4）如何分析问卷数据<br/>
+当根据问题大纲设计好问卷，并投放回收以后（关于问卷投放和问题设计是一个较长的话题，此处不再赘述），一般来说都会按之前的分析维度来拆分，因为这些是之前和业务确认过的，比较有帮助的。但是在过程中，也会视分析情况来进一步做交叉对比等，可能会有一些意外的发现，这是一个比较有趣的过程。</p>
+
+<p>对于设计师来讲，在数据分析阶段，会一些交叉分析基本能满足工作需求，可以不需要聚类这种比较复杂的方式。最终的分析结果形式如下图7所示，当然也包含基本的用户白描部分。<br/>
+<img src="http://oeseln4ng.bkt.clouddn.com/14895969098879.jpg" alt=""/></p>
+
+<p>３.用户访谈<br/>
+当问卷结束以后，由于在这一阶段已经和产品达成了愉快的共识，就可以继续做用户画像的工作，从之前的几个象限中，挑选一些典型的用户出来，做进一步访谈。</p>
+
+<p>（1）如何筛选访谈用户<br/>
+访谈用户主要来源于之前填写问卷的用户，如何从众多用户中筛选出合适的，是首要解决的问题，也是访谈前重点。首先，根据之前核心/非核心用户的划分进一步细化分类，从而知道应该挑选的对象。</p>
+
+<p>如下图8所示，统计学上有很多分类方法，但对数据量要求较高，所以一般在不具备条件的情况下，会使用比较简单粗糙的手动分类（也就是按业务逻辑来分类）。可以看出，下图中用户的分类标签更多的是用户属性方面，因为回收的问卷主要讲了3件事：</p>
+
+<p>数量分布；<br/>
+使用频率、使用时长、进入时间（谁是活跃用户，也就是指留存较好的用户）；<br/>
+社会属性。</p>
+
+<p>其中1和2在象限上，图上的标签就是社会属性了，将这些属性投上去，用肉眼就能发现一些可见的分类。这种方法虽然粗糙简单，但是直观有效。由于回收的问卷样本不是特别多，统计学上的方式并不适用。<br/>
+<img src="http://oeseln4ng.bkt.clouddn.com/14895969244353.jpg" alt=""/></p>
+
+<p>那么，在4个象限中，到底要访谈哪些用户呢？</p>
+
+<p>对于产品来讲，重点的的人群，永远只有两类：1、人多的分类；2、活跃的分类。我们做的所有努力都是为了维护这两个分类的规模，以及努力将其他用户转化近这两个分类中；因此，目前优质用户对我们来讲很重要。而且，由于团队第一次做，资源、精力都有限，所以先以优质用户为主，覆盖部分待改善用户，其他象限以后再做。</p>
+
+<p>访谈的用户范围定了，接下来就是筛选出符合该条件的用户，共筛选出20个用户进行访谈，每类5-6个人。</p>
+
+<p>（2）访谈形式和大纲<br/>
+关于访谈形式和大纲，这里只做一些简单介绍：对于我们团队来讲，面对面访谈虽然优点很多，但团队并不具备资源，所以选择了电访和QQ访谈。由于我们的访谈信息量较多，开始的两个电访用户结果并不理想，后来使用的是QQ访谈，虽然消耗的时间多，但就收集的信息量来讲更有价值。</p>
+
+<p>访谈大纲一般是比较开放的题目，更多地会询问一些问卷触达不到的内容，比如说怎么理解一个功能，为什么会喜欢某些内容，平时使用APP的习惯是先点击哪个再点击哪个之类，可以看成是问卷问题再往下拆细，更多地去触达细节。</p>
+
+<p>（3）访谈信息如何处理<br/>
+由于用户画像的根本是要找到同类用户的共性，和分类用户的异性，所以访谈后的信息整理也主要是围绕这个目的。但是对新手来讲，首次面对海量信息，很容易迷失（就像我T_T），所以有个最简单有效的方式就是，看关键词的出现频率，先挑高的出来，再根据上下文理解哪个是可以作为特征的。</p>
+
+<p>但是这个方法对我似乎并不有效，因为信息多且散，需要整理者有较强的概括能力，可以体会一下下图8的信息。所以只能根据每个信息节点，一个点一个点的抽，比如二次动漫，这种内容的覆盖范围太大，可能拆分成具体的动漫类型、吸引人的信息、日本文化、轻小说等相关信息。虽然比较消耗时间和脑力，但结果还是值得的。<br/>
+<img src="http://oeseln4ng.bkt.clouddn.com/14895969363584.jpg" alt=""/></p>
+
+<p>当整理出最终结果以后，用户画像的雏形基本形成。</p>
+
+<p>用户画像实际是由两部分组成：</p>
+
+<p>概括的部分，是根据前面的量化研究带来的，比如：18~22岁的学生群体，男女都有；<br/>
+具象的部分是由定性研究而来，也就是用户访谈，比如，用户具体是如何使用产品的，他对这种内容的诉求和态度等。</p>
+
+<p>通常情况下，建立3个左右的用户画像即可，且要对画像进行优先级排列，排列的依据主要来源于之前的数据挖掘和问卷调研，比如每个类型占有的大致比例。最后不要忘记给每类用户画像起一个名字（即简述），用于对该类用户画像的总结，方便理解的同时，也更容易复用。比如“二次元重症患者”就会比“14~16岁之间，女性为主，喜欢浏览二次元视频和追动漫新番，每天花费4~6小时观看相关作品，积极参与评论/翻译/同人创作等”更容易记忆。</p>
+
+<p>三、画像的最终运用<br/>
+用户画像从根本上来讲，就是为了统一产品相关人员的共同认知的，并以画像为基础给产品或运营做参考依据。所以，通常随着画像的产出，也需要给产品设计、运营、甚至推广等意见或建议，这样整个用户画像的研究才是完整的。</p>
+
+<p>最后，虽然整个研究过程整体顺利，但同时也存在不少问题，会尝试在未来工作中持续改进，也欢迎专业人士交流~</p>
+
+
+    
+
+      </div>
+
+      <div class="row">
+        <div class="large-6 columns">
+        <p class="text-left" style="padding:15px 0px;">
+      
+          <a href="15170753969710.html" 
+          title="Previous Post: 冬子私房">&laquo; 冬子私房</a>
+      
+        </p>
+        </div>
+        <div class="large-6 columns">
+      <p class="text-right" style="padding:15px 0px;">
+      
+          <a  href="15170750960504.html" 
+          title="Next Post: 师ド ナ生">师ド ナ生 &raquo;</a>
+      
+      </p>
+        </div>
+      </div>
+      <div class="comments-wrap">
+        <div class="share-comments">
+          <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = https://disqus.com/by/shellerliu;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = shellerliu; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://sheller.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+          
+            <div id="disqus_thread"></div>
+          
+
+          
+        </div>
+      </div>
+    </div><!-- article-wrap -->
+  </div><!-- large 8 -->
+
+
+
+
+ <div class="large-4 medium-4 columns">
+  <div class="hide-for-small">
+    <div id="sidebar" class="sidebar">
+          <div id="site-info" class="site-info">
+            
+                <div class="site-a-logo"><img src="asset/img/head.jpg" /></div>
+            
+                <h1>Sheller</h1>
+                <div class="site-des"></div>
+                <div class="social">
+<a target="_blank" class="facebook" href="https://www.facebook.com/lsl1987" title="Facebook">Facebook</a>
+
+
+
+
+
+
+<a target="_blank" class="weibo" href="https://weibo.com/lsl2964" title="weibo">Weibo</a>
+<a target="_blank" class="twitter" target="_blank" href="https://twitter.com/lsl1987" title="Twitter">Twitter</a>
+<a target="_blank" class="github" target="_blank" href="https://github.com/shellerweb" title="GitHub">GitHub</a>
+
+  <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a>
+                
+              	 </div>
+          	</div>
+
+             
+
+              <div id="site-categories" class="side-item ">
+                <div class="side-header">
+                  <h2>Categories</h2>
+                </div>
+                <div class="side-content">
+
+      	<p class="cat-list">
+        
+            <a href="Study.html"><strong>Study</strong></a>
+        
+            <a href="Photo.html"><strong>Photo</strong></a>
+        
+            <a href="Book.html"><strong>Book</strong></a>
+         
+        </p>
+
+
+                </div>
+              </div>
+
+              <div id="site-categories" class="side-item">
+                <div class="side-header">
+                  <h2>Recent Posts</h2>
+                </div>
+                <div class="side-content">
+                <ul class="posts-list">
+	      
+		      
+			      <li class="post">
+			        <a href="15170753969710.html">冬子私房</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15170752718248.html">实战案例：非用研人员如何创建用户画像</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15170750960504.html">师ド ナ生</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15170748702694.html">E杯咖啡</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15170747854194.html">三国谜案节选</a>
+			      </li>
+		     
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		   
+		  		</ul>
+                </div>
+              </div>
+        </div><!-- sidebar -->
+      </div><!-- hide for small -->
+</div><!-- large 4 -->
+
+</div><!-- row -->
+
+ <div class="page-bottom clearfix">
+  <div class="row">
+   <p class="copyright">Copyright &copy; 2015
+Powered by <a target="_blank" href="http://shellerweb.com">Shellerweb</a>,&nbsp; 
+Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'shellerliu'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+<script type="text/javascript">
+var disqus_shortname = 'shellerliu'; 
+
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+  
+    
+
+    <script src="asset/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+      function fixSidebarHeight(){
+        var w1 = $('.markdown-body').height();
+          var w2 = $('#sidebar').height();
+          if (w1 > w2) { $('#sidebar').height(w1); };
+      }
+      $(function(){
+        fixSidebarHeight();
+      })
+      $(window).load(function(){
+          fixSidebarHeight();
+      });
+     
+    </script>
+
+    
+
+
+
+  </body>
+</html>
