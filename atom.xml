@@ -4,7 +4,7 @@
   <title><![CDATA[Sheller]]></title>
   <link href="http://shellerweb.com/atom.xml" rel="self"/>
   <link href="http://shellerweb.com/"/>
-  <updated>2018-02-24T14:51:51+08:00</updated>
+  <updated>2018-02-24T15:39:29+08:00</updated>
   <id>http://shellerweb.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -18,9 +18,7 @@
     <updated>2018-02-24T14:05:06+08:00</updated>
     <id>http://shellerweb.com/15194523062988.html</id>
     <content type="html"><![CDATA[
-<p>ADOC:</p>
-
-<h2 id="toc_0">使用11级权限登录</h2>
+<h5 id="toc_0">使用11级权限登录</h5>
 
 <blockquote>
 <p>SI:8888/8888F/11/SDH888</p>
@@ -30,44 +28,44 @@
 
 <span id="more"></span><!-- more --> 
 
-<h2 id="toc_1">查看2号打票机信息</h2>
+<h5 id="toc_1">查看2号打票机信息</h5>
 
 <blockquote>
-<p>DI:2                                                                           </p>
+<p>DI:2</p>
 </blockquote>
 
-<pre><code>               DEVICE INFORMATION DISPLAY  - DEVICE 2                       
+<pre><code>                   DEVICE INFORMATION DISPLAY  - DEVICE 2                       
 
-         DEVICE STATUS                     DEVICE DEFINITION                
+             DEVICE STATUS                     DEVICE DEFINITION                
 
-         -------------                     -----------------                
+             -------------                     -----------------                
 
-       CONTROL PID:                        OFFICE: SDH888                   
+           CONTROL PID:                        OFFICE: SDH888                   
 
-     CONTROL AGENT:                           PID: 21814                    
+         CONTROL AGENT:                           PID: 21814                    
 
-            STATUS: UP                  ATTRIBUTE: ATB                      
+                STATUS: UP                  ATTRIBUTE: ATB                      
 
-             INPUT: INACTIVE                 MODE: DEMAND                   
+                 INPUT: INACTIVE                 MODE: DEMAND                   
 
-            OUTPUT: INACTIVE                 TYPE: 3                        
+                OUTPUT: INACTIVE                 TYPE: 3                        
 
-              NACK:                      CURRENCY: CNY2                     
+                  NACK:                      CURRENCY: CNY2                     
 
-           TICKETS: 0                                                       
+               TICKETS: 0                                                       
 
-     BOARDING PASS: 0            DEFAULT TKT POOL: 43                       
+         BOARDING PASS: 0            DEFAULT TKT POOL: 43                       
 
-                                         STP PIDS:                          
+                                             STP PIDS:                          
 
+                                                                                
 
+                                                                  TKTS          
 
-                                                              TKTS          
+ POOL/DOC TYPE  LAST TKT ##### / STOCK CNT#####   TICKET NUMBER RANGE     AVAIL         
+
+43  / YYB       4201137576 / N           4201000001 / 4201200000  62424   
 </code></pre>
-
-<p>POOL/DOC TYPE  LAST TKT # / STOCK CNT#   TICKET NUMBER RANGE     AVAIL         </p>
-
-<p>43  / YYB       4201137576 / N           4201000001 / 4201200000  62424   </p>
 
 <blockquote>
 <p>EC:2                                                                           </p>
@@ -81,7 +79,7 @@
 
 <p>ACCEPTED</p>
 
-<h2 id="toc_2">换到5号票池</h2>
+<h5 id="toc_2">换到5号票池</h5>
 
 <blockquote>
 <p>TN:2/P5                                                                        </p>
@@ -90,45 +88,46 @@
 <p>ACCEPTED                                                                           </p>
 
 <blockquote>
-<p>DI:2                                                                           </p>
+<p>DI:2</p>
 </blockquote>
 
-<pre><code>               DEVICE INFORMATION DISPLAY  - DEVICE 2                       
+<pre><code>                   DEVICE INFORMATION DISPLAY  - DEVICE 2                       
 
-         DEVICE STATUS                     DEVICE DEFINITION                
+             DEVICE STATUS                     DEVICE DEFINITION                
 
-         -------------                     -----------------                
+             -------------                     -----------------                
 
-       CONTROL PID: 61946                  OFFICE: SDH888                   
+           CONTROL PID: 61946                  OFFICE: SDH888                   
 
-     CONTROL AGENT: 8888                      PID: 21814                    
+         CONTROL AGENT: 8888                      PID: 21814                    
 
-            STATUS: UP                  ATTRIBUTE: ATB                      
+                STATUS: UP                  ATTRIBUTE: ATB                      
 
-             INPUT: ACTIVE                   MODE: DEMAND                   
+                 INPUT: ACTIVE                   MODE: DEMAND                   
 
-            OUTPUT: INACTIVE                 TYPE: 3                        
+                OUTPUT: INACTIVE                 TYPE: 3                        
 
-              NACK:                      CURRENCY: CNY2                     
+                  NACK:                      CURRENCY: CNY2                     
 
-           TICKETS: 0                                                       
+               TICKETS: 0                                                       
 
-     BOARDING PASS: 0            DEFAULT TKT POOL: 5                        
+         BOARDING PASS: 0            DEFAULT TKT POOL: 5                        
 
-                                         STP PIDS:                          
+                                             STP PIDS:                          
 
+                                                                                
 
+                                                                  TKTS          
 
-                                                              TKTS          
+ POOL/DOC TYPE  LAST TKT ##### / STOCK CNT#####   TICKET NUMBER RANGE     AVAIL         
+
+5   / WSO       1100000020 / N           1100000010 / 1100000020  0
+
 </code></pre>
 
-<p>POOL/DOC TYPE  LAST TKT # / STOCK CNT#   TICKET NUMBER RANGE     AVAIL         </p>
+<h5 id="toc_3">5号票池可用票数为0</h5>
 
-<p>5   / WSO       1100000020 / N           1100000010 / 1100000020  0</p>
-
-<h2 id="toc_3">5号票池可用票数为0</h2>
-
-<h2 id="toc_4">从5号票池中获取5个票号</h2>
+<h5 id="toc_4">从5号票池中获取5个票号</h5>
 
 <blockquote>
 <p>TN:2/P5/5                                                                      </p>
@@ -136,186 +135,215 @@
 
 <p>ATB2 TICKET POOL UNASSIGNED</p>
 
-<h2 id="toc_5">由于5号票池可用票数为0所以获取失败</h2>
+<h5 id="toc_5">由于5号票池可用票数为0所以获取失败</h5>
 
-<h2 id="toc_6">使用ADOC:指令打开票池</h2>
+<h5 id="toc_6">使用ADOC:指令打开票池</h5>
 
 <blockquote>
 <p>ADOC:  </p>
 </blockquote>
 
-<pre><code>                    ATB DOCUMENT INFORMATION                                
+<pre><code>                        ATB DOCUMENT INFORMATION                                
+
+                                                                                
+
+                                                                                
+
+ DOCUMENT                        SCN POOL   TICKET   NUMBER   RANGE    CURRENT  
+
+ NBR  IND  DESCRIPTION           CTL NBR  A/L  FORM SERIAL##### -  SERIAL##### TICKET   
+
+                                                                                
+
+ _1  TAO * TNA228_08658144_____   N  __1  324  110 _0000861 - _0000990  0000987 
+
+ _2  TAA * SDH010_08631222_____   N  __2  324  110 _0000712 - _0000860  0000000 
+
+ _3  NAA   SDH900_08630800_____   Y  __3  324  233 _1000001 - _2000000  1090641 
+
+ _4  TAC * SDH010_08631200_____   Y  __4  324  230 _0401001 - _0500000  0498420 
+
+ _5  WSO * SDH888_08612345_____   N  __5  324  110 _1000010 - _1000520  0000000 
+
+ _6  WSA   SDH888_08612345_____   Y  __6  324  233 _2000001 - _7000000  4607056 
+
+ _7  YNA * SDH030_08631800_____   N  __7  324  230 _2050001 - _2100000  0000000 
+
+ _8  YNB   SDH030_08631800_____   Y  __8  324  230 _2100001 - _2300000  2267386 
+
+ _9  NAB * SDH900_08630800_____   N  __9  324  230 _3300001 - _3400000  0000000 
+
+ 10  SZA * SDH905_08632200_____   Y  _10  324  230 _4066361 - _4067874  4067857 
+
+ 11  BJS * SDH201_08632000_____   N  _11  324  230 _6010001 - _6020000  0000000 
+
+ 12  CTA * SDH909_08630100_____   N  _12  324  230 _5008001 - _5030000  0000000 
+
+                                                                                
+
+                                                                                
+
+                         1/25       GO TO __ PAGE        HELP(H) _              
+
+                                                                                
+
+       F1 - NEXT SCREEN   F2 - PREV SCREEN    F3 - EXIT    F4 - REDISPLAY
 </code></pre>
 
-<p>DOCUMENT                        SCN POOL   TICKET   NUMBER   RANGE    CURRENT  </p>
+<hr/>
 
-<p>NBR  IND  DESCRIPTION           CTL NBR  A/L  FORM SERIAL# -  SERIAL# TICKET   </p>
+<p>5号票池的票号范围与其他票池有重复</p>
 
-<p><u>1  TAO * TNA228</u>08658144_____   N  __1  324  110 _0000861 - _0000990  0000987 </p>
+<p>所以将5号票池的票号范围改为8600010-8600520，如下所示</p>
 
-<p><u>2  TAA * SDH010</u>08631222_____   N  __2  324  110 _0000712 - _0000860  0000000 </p>
+<p>修改后在HELP(H)后面F12或双击使修改生效，然后F3退出</p>
 
-<p><u>3  NAA   SDH900</u>08630800_____   Y  __3  324  233 _1000001 - _2000000  1090641 </p>
+<h6 id="toc_7">######################################################################################################################</h6>
 
-<p><u>4  TAC * SDH010</u>08631200_____   Y  __4  324  230 _0401001 - _0500000  0498420 </p>
+<pre><code>                        ATB DOCUMENT INFORMATION                                
 
-<p><u>5  WSO * SDH888</u>08612345_____   N  __5  324  110 _1000010 - _1000520  0000000 </p>
+                                                                                
 
-<p><u>6  WSA   SDH888</u>08612345_____   Y  __6  324  233 _2000001 - _7000000  4607056 </p>
+                                                                                
 
-<p><u>7  YNA * SDH030</u>08631800_____   N  __7  324  230 _2050001 - _2100000  0000000 </p>
+ DOCUMENT                        SCN POOL   TICKET   NUMBER   RANGE    CURRENT  
 
-<p><u>8  YNB   SDH030</u>08631800_____   Y  __8  324  230 _2100001 - _2300000  2267386 </p>
+ NBR  IND  DESCRIPTION           CTL NBR  A/L  FORM SERIAL##### -  SERIAL##### TICKET   
 
-<p><u>9  NAB * SDH900</u>08630800_____   N  __9  324  230 _3300001 - _3400000  0000000 </p>
+                                                                                
 
-<p>10  SZA * SDH905_08632200_____   Y  _10  324  230 _4066361 - _4067874  4067857 </p>
+ _1  TAO * TNA228_08658144_____   N  __1  324  110 _0000861 - _0000990  0000987 
 
-<p>11  BJS * SDH201_08632000_____   N  _11  324  230 _6010001 - _6020000  0000000 </p>
+ _2  TAA * SDH010_08631222_____   N  __2  324  110 _0000712 - _0000860  0000000 
 
-<p>12  CTA * SDH909_08630100_____   N  _12  324  230 _5008001 - _5030000  0000000 </p>
+ _3  NAA   SDH900_08630800_____   Y  __3  324  233 _1000001 - _2000000  1090641 
 
-<pre><code>                     1/25       GO TO __ PAGE        HELP(H) _              
+ _4  TAC * SDH010_08631200_____   Y  __4  324  230 _0401001 - _0500000  0498420 
 
+ _5  WSO * SDH888_08612345_____   N  __5  324  110 _8600010 - _8600520  0000000 
 
+ _6  WSA   SDH888_08612345_____   Y  __6  324  233 _2000001 - _7000000  4607056 
 
-   F1 - NEXT SCREEN   F2 - PREV SCREEN    F3 - EXIT    F4 - REDISPLAY
-</code></pre>
+ _7  YNA * SDH030_08631800_____   N  __7  324  230 _2050001 - _2100000  0000000 
 
-<h2 id="toc_7">5号票池的票号范围与其他票池有重复</h2>
+ _8  YNB   SDH030_08631800_____   Y  __8  324  230 _2100001 - _2300000  2267386 
 
-<h2 id="toc_8">所以将5号票池的票号范围改为8600010-8600520，如下所示</h2>
+ _9  NAB * SDH900_08630800_____   N  __9  324  230 _3300001 - _3400000  0000000 
 
-<h2 id="toc_9">修改后在HELP(H)后面F12或双击使修改生效，然后F3退出</h2>
+ 10  SZA * SDH905_08632200_____   Y  _10  324  230 _4066361 - _4067874  4067857 
 
-<h6 id="toc_10">#########################################################################</h6>
+ 11  BJS * SDH201_08632000_____   N  _11  324  230 _6010001 - _6020000  0000000 
 
-<pre><code>                    ATB DOCUMENT INFORMATION                                
-</code></pre>
+ 12  CTA * SDH909_08630100_____   N  _12  324  230 _5008001 - _5030000  0000000 
 
-<p>DOCUMENT                        SCN POOL   TICKET   NUMBER   RANGE    CURRENT  </p>
+                                                                                
 
-<p>NBR  IND  DESCRIPTION           CTL NBR  A/L  FORM SERIAL# -  SERIAL# TICKET   </p>
+                                                                                
 
-<p><u>1  TAO * TNA228</u>08658144_____   N  __1  324  110 _0000861 - _0000990  0000987 </p>
+                         1/25       GO TO __ PAGE        HELP(H) _              
 
-<p><u>2  TAA * SDH010</u>08631222_____   N  __2  324  110 _0000712 - _0000860  0000000 </p>
+                                                                                
 
-<p><u>3  NAA   SDH900</u>08630800_____   Y  __3  324  233 _1000001 - _2000000  1090641 </p>
-
-<p><u>4  TAC * SDH010</u>08631200_____   Y  __4  324  230 _0401001 - _0500000  0498420 </p>
-
-<p><u>5  WSO * SDH888</u>08612345_____   N  __5  324  110 _8600010 - _8600520  0000000 </p>
-
-<p><u>6  WSA   SDH888</u>08612345_____   Y  __6  324  233 _2000001 - _7000000  4607056 </p>
-
-<p><u>7  YNA * SDH030</u>08631800_____   N  __7  324  230 _2050001 - _2100000  0000000 </p>
-
-<p><u>8  YNB   SDH030</u>08631800_____   Y  __8  324  230 _2100001 - _2300000  2267386 </p>
-
-<p><u>9  NAB * SDH900</u>08630800_____   N  __9  324  230 _3300001 - _3400000  0000000 </p>
-
-<p>10  SZA * SDH905_08632200_____   Y  _10  324  230 _4066361 - _4067874  4067857 </p>
-
-<p>11  BJS * SDH201_08632000_____   N  _11  324  230 _6010001 - _6020000  0000000 </p>
-
-<p>12  CTA * SDH909_08630100_____   N  _12  324  230 _5008001 - _5030000  0000000 </p>
-
-<pre><code>                     1/25       GO TO __ PAGE        HELP(H) _              
-
-
-
-   F1 - NEXT SCREEN   F2 - PREV SCREEN    F3 - EXIT    F4 - REDISPLAY       
+       F1 - NEXT SCREEN   F2 - PREV SCREEN    F3 - EXIT    F4 - REDISPLAY       
 </code></pre>
 
 <p>ACCEPTED                                                                        </p>
 
-<h2 id="toc_11">再次ADOC:确认修改生效</h2>
+<h5 id="toc_8">再次ADOC:确认修改生效</h5>
 
 <blockquote>
-<p>ADOC:                                                                          </p>
+<p>ADOC: </p>
 </blockquote>
 
-<pre><code>                    ATB DOCUMENT INFORMATION                                
+<pre><code>                        ATB DOCUMENT INFORMATION                                
+
+                                                                                
+
+                                                                                
+
+ DOCUMENT                        SCN POOL   TICKET   NUMBER   RANGE    CURRENT  
+
+ NBR  IND  DESCRIPTION           CTL NBR  A/L  FORM SERIAL##### -  SERIAL##### TICKET   
+
+                                                                                
+
+ _1  TAO * TNA228_08658144_____   N  __1  324  110 _0000861 - _0000990  0000987 
+
+ _2  TAA * SDH010_08631222_____   N  __2  324  110 _0000712 - _0000860  0000000 
+
+ _3  NAA   SDH900_08630800_____   Y  __3  324  233 _1000001 - _2000000  1090641 
+
+ _4  TAC * SDH010_08631200_____   Y  __4  324  230 _0401001 - _0500000  0498420 
+
+ _5  WSO * SDH888_08612345_____   N  __5  324  110 _8600010 - _8600520  8600010 
+
+ _6  WSA   SDH888_08612345_____   Y  __6  324  233 _2000001 - _7000000  4607056 
+
+ _7  YNA * SDH030_08631800_____   N  __7  324  230 _2050001 - _2100000  0000000 
+
+ _8  YNB   SDH030_08631800_____   Y  __8  324  230 _2100001 - _2300000  2267386 
+
+ _9  NAB * SDH900_08630800_____   N  __9  324  230 _3300001 - _3400000  0000000 
+
+ 10  SZA * SDH905_08632200_____   Y  _10  324  230 _4066361 - _4067874  4067857 
+
+ 11  BJS * SDH201_08632000_____   N  _11  324  230 _6010001 - _6020000  0000000 
+
+ 12  CTA * SDH909_08630100_____   N  _12  324  230 _5008001 - _5030000  0000000 
+
+                                                                                
+
+                                                                                
+
+                         1/25       GO TO __ PAGE        HELP(H) _              
+
+                                                                                
+
+       F1 - NEXT SCREEN   F2 - PREV SCREEN    F3 - EXIT    F4 - REDISPLAY 
 </code></pre>
 
-<p>DOCUMENT                        SCN POOL   TICKET   NUMBER   RANGE    CURRENT  </p>
-
-<p>NBR  IND  DESCRIPTION           CTL NBR  A/L  FORM SERIAL# -  SERIAL# TICKET   </p>
-
-<p><u>1  TAO * TNA228</u>08658144_____   N  __1  324  110 _0000861 - _0000990  0000987 </p>
-
-<p><u>2  TAA * SDH010</u>08631222_____   N  __2  324  110 _0000712 - _0000860  0000000 </p>
-
-<p><u>3  NAA   SDH900</u>08630800_____   Y  __3  324  233 _1000001 - _2000000  1090641 </p>
-
-<p><u>4  TAC * SDH010</u>08631200_____   Y  __4  324  230 _0401001 - _0500000  0498420 </p>
-
-<p><u>5  WSO * SDH888</u>08612345_____   N  __5  324  110 _8600010 - _8600520  8600010 </p>
-
-<p><u>6  WSA   SDH888</u>08612345_____   Y  __6  324  233 _2000001 - _7000000  4607056 </p>
-
-<p><u>7  YNA * SDH030</u>08631800_____   N  __7  324  230 _2050001 - _2100000  0000000 </p>
-
-<p><u>8  YNB   SDH030</u>08631800_____   Y  __8  324  230 _2100001 - _2300000  2267386 </p>
-
-<p><u>9  NAB * SDH900</u>08630800_____   N  __9  324  230 _3300001 - _3400000  0000000 </p>
-
-<p>10  SZA * SDH905_08632200_____   Y  _10  324  230 _4066361 - _4067874  4067857 </p>
-
-<p>11  BJS * SDH201_08632000_____   N  _11  324  230 _6010001 - _6020000  0000000 </p>
-
-<p>12  CTA * SDH909_08630100_____   N  _12  324  230 _5008001 - _5030000  0000000 </p>
-
-<pre><code>                     1/25       GO TO __ PAGE        HELP(H) _              
-
-
-
-   F1 - NEXT SCREEN   F2 - PREV SCREEN    F3 - EXIT    F4 - REDISPLAY 
-</code></pre>
-
-<h2 id="toc_12">查看2号打票机</h2>
+<h5 id="toc_9">查看2号打票机</h5>
 
 <blockquote>
-<p>DI:2                                                                           </p>
+<p>DI:2  </p>
 </blockquote>
 
-<pre><code>               DEVICE INFORMATION DISPLAY  - DEVICE 2                       
+<pre><code>                   DEVICE INFORMATION DISPLAY  - DEVICE 2                       
 
-         DEVICE STATUS                     DEVICE DEFINITION                
+             DEVICE STATUS                     DEVICE DEFINITION                
 
-         -------------                     -----------------                
+             -------------                     -----------------                
 
-       CONTROL PID: 61946                  OFFICE: SDH888                   
+           CONTROL PID: 61946                  OFFICE: SDH888                   
 
-     CONTROL AGENT: 8888                      PID: 21814                    
+         CONTROL AGENT: 8888                      PID: 21814                    
 
-            STATUS: UP                  ATTRIBUTE: ATB                      
+                STATUS: UP                  ATTRIBUTE: ATB                      
 
-             INPUT: ACTIVE                   MODE: DEMAND                   
+                 INPUT: ACTIVE                   MODE: DEMAND                   
 
-            OUTPUT: INACTIVE                 TYPE: 3                        
+                OUTPUT: INACTIVE                 TYPE: 3                        
 
-              NACK:                      CURRENCY: CNY2                     
+                  NACK:                      CURRENCY: CNY2                     
 
-           TICKETS: 0                                                       
+               TICKETS: 0                                                       
 
-     BOARDING PASS: 0            DEFAULT TKT POOL: 5                        
+         BOARDING PASS: 0            DEFAULT TKT POOL: 5                        
 
-                                         STP PIDS:                          
+                                             STP PIDS:                          
 
+                                                                                
 
+                                                                  TKTS          
 
-                                                              TKTS          
+ POOL/DOC TYPE  LAST TKT ##### / STOCK CNT#####   TICKET NUMBER RANGE     AVAIL         
+
+5   / WSO       NONE       / N           1108600010 / 1108600520  511 
 </code></pre>
 
-<p>POOL/DOC TYPE  LAST TKT # / STOCK CNT#   TICKET NUMBER RANGE     AVAIL         </p>
+<h5 id="toc_10">已经有可用票号</h5>
 
-<p>5   / WSO       NONE       / N           1108600010 / 1108600520  511 </p>
-
-<h2 id="toc_13">已经有可用票号</h2>
-
-<h2 id="toc_14">从5号票池获取100个票号</h2>
+<h5 id="toc_11">从5号票池获取100个票号</h5>
 
 <blockquote>
 <p>TN:2/P5/100                                                                    </p>
@@ -327,42 +355,42 @@
 <p>DI:2                                                                           </p>
 </blockquote>
 
-<pre><code>               DEVICE INFORMATION DISPLAY  - DEVICE 2                       
+<pre><code>                   DEVICE INFORMATION DISPLAY  - DEVICE 2                       
 
-         DEVICE STATUS                     DEVICE DEFINITION                
+             DEVICE STATUS                     DEVICE DEFINITION                
 
-         -------------                     -----------------                
+             -------------                     -----------------                
 
-       CONTROL PID: 61946                  OFFICE: SDH888                   
+           CONTROL PID: 61946                  OFFICE: SDH888                   
 
-     CONTROL AGENT: 8888                      PID: 21814                    
+         CONTROL AGENT: 8888                      PID: 21814                    
 
-            STATUS: UP                  ATTRIBUTE: ATB                      
+                STATUS: UP                  ATTRIBUTE: ATB                      
 
-             INPUT: ACTIVE                   MODE: DEMAND                   
+                 INPUT: ACTIVE                   MODE: DEMAND                   
 
-            OUTPUT: INACTIVE                 TYPE: 3                        
+                OUTPUT: INACTIVE                 TYPE: 3                        
 
-              NACK:                      CURRENCY: CNY2                     
+                  NACK:                      CURRENCY: CNY2                     
 
-           TICKETS: 0                                                       
+               TICKETS: 0                                                       
 
-     BOARDING PASS: 0            DEFAULT TKT POOL: 5                        
+         BOARDING PASS: 0            DEFAULT TKT POOL: 5                        
 
-                                         STP PIDS:                          
+                                             STP PIDS:                          
 
+                                                                                
 
+                                                                  TKTS          
 
-                                                              TKTS          
+ POOL/DOC TYPE  LAST TKT ##### / STOCK CNT#####   TICKET NUMBER RANGE     AVAIL         
+
+ -------------  -----------------------  ----------------------   -----         
+
+5   / WSO       NONE                     1108600010 / 1108600109  100
 </code></pre>
 
-<p>POOL/DOC TYPE  LAST TKT # / STOCK CNT#   TICKET NUMBER RANGE     AVAIL         </p>
-
-<hr/>
-
-<p>5   / WSO       NONE                     1108600010 / 1108600109  100</p>
-
-<h2 id="toc_15">切换到6号票池</h2>
+<h5 id="toc_12">切换到6号票池</h5>
 
 <blockquote>
 <p>TN:2/P6                                                                        </p>
@@ -370,139 +398,166 @@
 
 <p>STOCK CONTROL NUMBERS NOT REGISTERED </p>
 
-<h2 id="toc_16">切换失败，使用ADOC:指令检查票池</h2>
+<h5 id="toc_13">切换失败，使用ADOC:指令检查票池</h5>
 
 <blockquote>
 <p>ADOC:   </p>
 </blockquote>
 
-<pre><code>                    ATB DOCUMENT INFORMATION                                
+<pre><code>                        ATB DOCUMENT INFORMATION                                
+
+                                                                                
+
+                                                                                
+
+ DOCUMENT                        SCN POOL   TICKET   NUMBER   RANGE    CURRENT  
+
+ NBR  IND  DESCRIPTION           CTL NBR  A/L  FORM SERIAL##### -  SERIAL##### TICKET   
+
+                                                                                
+
+ _1  TAO * TNA228_08658144_____   N  __1  324  110 _0000861 - _0000990  0000987 
+
+ _2  TAA * SDH010_08631222_____   N  __2  324  110 _0000712 - _0000860  0000000 
+
+ _3  NAA   SDH900_08630800_____   Y  __3  324  233 _1000001 - _2000000  1090641 
+
+ _4  TAC * SDH010_08631200_____   Y  __4  324  230 _0401001 - _0500000  0498420 
+
+ _5  WSO * SDH888_08612345_____   N  __5  324  110 _8600010 - _8600520  8600110 
+
+ _6  WSA   SDH888_08612345_____   Y  __6  324  233 _2000001 - _7000000  4607056 
+
+ _7  YNA * SDH030_08631800_____   N  __7  324  230 _2050001 - _2100000  0000000 
+
+ _8  YNB   SDH030_08631800_____   Y  __8  324  230 _2100001 - _2300000  2267386 
+
+ _9  NAB * SDH900_08630800_____   N  __9  324  230 _3300001 - _3400000  0000000 
+
+ 10  SZA * SDH905_08632200_____   Y  _10  324  230 _4066361 - _4067874  4067857 
+
+ 11  BJS * SDH201_08632000_____   N  _11  324  230 _6010001 - _6020000  0000000 
+
+ 12  CTA * SDH909_08630100_____   N  _12  324  230 _5008001 - _5030000  0000000 
+
+                                                                                
+
+                                                                                
+
+                         1/25       GO TO __ PAGE        HELP(H) _              
+
+                                                                                
+
+       F1 - NEXT SCREEN   F2 - PREV SCREEN    F3 - EXIT    F4 - REDISPLAY
 </code></pre>
 
-<p>DOCUMENT                        SCN POOL   TICKET   NUMBER   RANGE    CURRENT  </p>
+<h5 id="toc_14">将6号票池的SCN CTL属性设为N，如下所示</h5>
 
-<p>NBR  IND  DESCRIPTION           CTL NBR  A/L  FORM SERIAL# -  SERIAL# TICKET   </p>
+<h5 id="toc_15">修改后在HELP(H)后面F12或双击使修改生效，然后F3退出</h5>
 
-<p><u>1  TAO * TNA228</u>08658144_____   N  __1  324  110 _0000861 - _0000990  0000987 </p>
+<pre><code>                        ATB DOCUMENT INFORMATION                                
 
-<p><u>2  TAA * SDH010</u>08631222_____   N  __2  324  110 _0000712 - _0000860  0000000 </p>
+                                                                                
 
-<p><u>3  NAA   SDH900</u>08630800_____   Y  __3  324  233 _1000001 - _2000000  1090641 </p>
+                                                                                
 
-<p><u>4  TAC * SDH010</u>08631200_____   Y  __4  324  230 _0401001 - _0500000  0498420 </p>
+ DOCUMENT                        SCN POOL   TICKET   NUMBER   RANGE    CURRENT  
 
-<p><u>5  WSO * SDH888</u>08612345_____   N  __5  324  110 _8600010 - _8600520  8600110 </p>
+ NBR  IND  DESCRIPTION           CTL NBR  A/L  FORM SERIAL##### -  SERIAL##### TICKET   
 
-<p><u>6  WSA   SDH888</u>08612345_____   Y  __6  324  233 _2000001 - _7000000  4607056 </p>
+                                                                                
 
-<p><u>7  YNA * SDH030</u>08631800_____   N  __7  324  230 _2050001 - _2100000  0000000 </p>
+ _1  TAO * TNA228_08658144_____   N  __1  324  110 _0000861 - _0000990  0000987 
 
-<p><u>8  YNB   SDH030</u>08631800_____   Y  __8  324  230 _2100001 - _2300000  2267386 </p>
+ _2  TAA * SDH010_08631222_____   N  __2  324  110 _0000712 - _0000860  0000000 
 
-<p><u>9  NAB * SDH900</u>08630800_____   N  __9  324  230 _3300001 - _3400000  0000000 </p>
+ _3  NAA   SDH900_08630800_____   Y  __3  324  233 _1000001 - _2000000  1090641 
 
-<p>10  SZA * SDH905_08632200_____   Y  _10  324  230 _4066361 - _4067874  4067857 </p>
+ _4  TAC * SDH010_08631200_____   Y  __4  324  230 _0401001 - _0500000  0498420 
 
-<p>11  BJS * SDH201_08632000_____   N  _11  324  230 _6010001 - _6020000  0000000 </p>
+ _5  WSO * SDH888_08612345_____   N  __5  324  110 _8600010 - _8600520  8600110 
 
-<p>12  CTA * SDH909_08630100_____   N  _12  324  230 _5008001 - _5030000  0000000 </p>
+ _6  WSA   SDH888_08612345_____   N  __6  324  233 _2000001 - _7000000  4607056 
 
-<pre><code>                     1/25       GO TO __ PAGE        HELP(H) _              
+ _7  YNA * SDH030_08631800_____   N  __7  324  230 _2050001 - _2100000  0000000 
 
+ _8  YNB   SDH030_08631800_____   Y  __8  324  230 _2100001 - _2300000  2267386 
 
+ _9  NAB * SDH900_08630800_____   N  __9  324  230 _3300001 - _3400000  0000000 
 
-   F1 - NEXT SCREEN   F2 - PREV SCREEN    F3 - EXIT    F4 - REDISPLAY
-</code></pre>
+ 10  SZA * SDH905_08632200_____   Y  _10  324  230 _4066361 - _4067874  4067857 
 
-<h2 id="toc_17">将6号票池的SCN CTL属性设为N，如下所示</h2>
+ 11  BJS * SDH201_08632000_____   N  _11  324  230 _6010001 - _6020000  0000000 
 
-<h2 id="toc_18">修改后在HELP(H)后面F12或双击使修改生效，然后F3退出</h2>
+ 12  CTA * SDH909_08630100_____   N  _12  324  230 _5008001 - _5030000  0000000 
 
-<pre><code>                    ATB DOCUMENT INFORMATION                                
-</code></pre>
+                                                                                
 
-<p>DOCUMENT                        SCN POOL   TICKET   NUMBER   RANGE    CURRENT  </p>
+                                                                                
 
-<p>NBR  IND  DESCRIPTION           CTL NBR  A/L  FORM SERIAL# -  SERIAL# TICKET   </p>
+                         1/25       GO TO __ PAGE        HELP(H) _              
 
-<p><u>1  TAO * TNA228</u>08658144_____   N  __1  324  110 _0000861 - _0000990  0000987 </p>
+                                                                                
 
-<p><u>2  TAA * SDH010</u>08631222_____   N  __2  324  110 _0000712 - _0000860  0000000 </p>
-
-<p><u>3  NAA   SDH900</u>08630800_____   Y  __3  324  233 _1000001 - _2000000  1090641 </p>
-
-<p><u>4  TAC * SDH010</u>08631200_____   Y  __4  324  230 _0401001 - _0500000  0498420 </p>
-
-<p><u>5  WSO * SDH888</u>08612345_____   N  __5  324  110 _8600010 - _8600520  8600110 </p>
-
-<p><u>6  WSA   SDH888</u>08612345_____   N  __6  324  233 _2000001 - _7000000  4607056 </p>
-
-<p><u>7  YNA * SDH030</u>08631800_____   N  __7  324  230 _2050001 - _2100000  0000000 </p>
-
-<p><u>8  YNB   SDH030</u>08631800_____   Y  __8  324  230 _2100001 - _2300000  2267386 </p>
-
-<p><u>9  NAB * SDH900</u>08630800_____   N  __9  324  230 _3300001 - _3400000  0000000 </p>
-
-<p>10  SZA * SDH905_08632200_____   Y  _10  324  230 _4066361 - _4067874  4067857 </p>
-
-<p>11  BJS * SDH201_08632000_____   N  _11  324  230 _6010001 - _6020000  0000000 </p>
-
-<p>12  CTA * SDH909_08630100_____   N  _12  324  230 _5008001 - _5030000  0000000 </p>
-
-<pre><code>                     1/25       GO TO __ PAGE        HELP(H) _              
-
-
-
-   F1 - NEXT SCREEN   F2 - PREV SCREEN    F3 - EXIT    F4 - REDISPLAY 
+       F1 - NEXT SCREEN   F2 - PREV SCREEN    F3 - EXIT    F4 - REDISPLAY 
 </code></pre>
 
 <p>ACCEPTED</p>
 
-<h2 id="toc_19">再次ADOC:确认修改生效</h2>
+<h5 id="toc_16">再次ADOC:确认修改生效</h5>
 
 <blockquote>
 <p>ADOC:                                                                          </p>
 </blockquote>
 
-<pre><code>                    ATB DOCUMENT INFORMATION                                
+<pre><code>                        ATB DOCUMENT INFORMATION                                
+
+                                                                                
+
+                                                                                
+
+ DOCUMENT                        SCN POOL   TICKET   NUMBER   RANGE    CURRENT  
+
+ NBR  IND  DESCRIPTION           CTL NBR  A/L  FORM SERIAL##### -  SERIAL##### TICKET   
+
+                                                                                
+
+ _1  TAO * TNA228_08658144_____   N  __1  324  110 _0000861 - _0000990  0000987 
+
+ _2  TAA * SDH010_08631222_____   N  __2  324  110 _0000712 - _0000860  0000000 
+
+ _3  NAA   SDH900_08630800_____   Y  __3  324  233 _1000001 - _2000000  1090641 
+
+ _4  TAC * SDH010_08631200_____   Y  __4  324  230 _0401001 - _0500000  0498420 
+
+ _5  WSO * SDH888_08612345_____   N  __5  324  110 _8600010 - _8600520  8600110 
+
+ _6  WSA   SDH888_08612345_____   N  __6  324  233 _2000001 - _7000000  4607176 
+
+ _7  YNA * SDH030_08631800_____   N  __7  324  230 _2050001 - _2100000  0000000 
+
+ _8  YNB   SDH030_08631800_____   Y  __8  324  230 _2100001 - _2300000  2267386 
+
+ _9  NAB * SDH900_08630800_____   N  __9  324  230 _3300001 - _3400000  0000000 
+
+ 10  SZA * SDH905_08632200_____   Y  _10  324  230 _4066361 - _4067874  4067857 
+
+ 11  BJS * SDH201_08632000_____   N  _11  324  230 _6010001 - _6020000  0000000 
+
+ 12  CTA * SDH909_08630100_____   N  _12  324  230 _5008001 - _5030000  0000000 
+
+                                                                                
+
+                                                                                
+
+                         1/25       GO TO __ PAGE        HELP(H) _              
+
+                                                                                
+
+       F1 - NEXT SCREEN   F2 - PREV SCREEN    F3 - EXIT    F4 - REDISPLAY 
 </code></pre>
 
-<p>DOCUMENT                        SCN POOL   TICKET   NUMBER   RANGE    CURRENT  </p>
-
-<p>NBR  IND  DESCRIPTION           CTL NBR  A/L  FORM SERIAL# -  SERIAL# TICKET   </p>
-
-<p><u>1  TAO * TNA228</u>08658144_____   N  __1  324  110 _0000861 - _0000990  0000987 </p>
-
-<p><u>2  TAA * SDH010</u>08631222_____   N  __2  324  110 _0000712 - _0000860  0000000 </p>
-
-<p><u>3  NAA   SDH900</u>08630800_____   Y  __3  324  233 _1000001 - _2000000  1090641 </p>
-
-<p><u>4  TAC * SDH010</u>08631200_____   Y  __4  324  230 _0401001 - _0500000  0498420 </p>
-
-<p><u>5  WSO * SDH888</u>08612345_____   N  __5  324  110 _8600010 - _8600520  8600110 </p>
-
-<p><u>6  WSA   SDH888</u>08612345_____   N  __6  324  233 _2000001 - _7000000  4607176 </p>
-
-<p><u>7  YNA * SDH030</u>08631800_____   N  __7  324  230 _2050001 - _2100000  0000000 </p>
-
-<p><u>8  YNB   SDH030</u>08631800_____   Y  __8  324  230 _2100001 - _2300000  2267386 </p>
-
-<p><u>9  NAB * SDH900</u>08630800_____   N  __9  324  230 _3300001 - _3400000  0000000 </p>
-
-<p>10  SZA * SDH905_08632200_____   Y  _10  324  230 _4066361 - _4067874  4067857 </p>
-
-<p>11  BJS * SDH201_08632000_____   N  _11  324  230 _6010001 - _6020000  0000000 </p>
-
-<p>12  CTA * SDH909_08630100_____   N  _12  324  230 _5008001 - _5030000  0000000 </p>
-
-<pre><code>                     1/25       GO TO __ PAGE        HELP(H) _              
-
-
-
-   F1 - NEXT SCREEN   F2 - PREV SCREEN    F3 - EXIT    F4 - REDISPLAY 
-</code></pre>
-
-<h2 id="toc_20">重新切换到6号票池</h2>
+<h5 id="toc_17">重新切换到6号票池</h5>
 
 <blockquote>
 <p>TN:2/P6                                                                        </p>
@@ -514,42 +569,42 @@
 <p>DI:2                                                                           </p>
 </blockquote>
 
-<pre><code>               DEVICE INFORMATION DISPLAY  - DEVICE 2                       
+<pre><code>                   DEVICE INFORMATION DISPLAY  - DEVICE 2                       
 
-         DEVICE STATUS                     DEVICE DEFINITION                
+             DEVICE STATUS                     DEVICE DEFINITION                
 
-         -------------                     -----------------                
+             -------------                     -----------------                
 
-       CONTROL PID: 61946                  OFFICE: SDH888                   
+           CONTROL PID: 61946                  OFFICE: SDH888                   
 
-     CONTROL AGENT: 8888                      PID: 21814                    
+         CONTROL AGENT: 8888                      PID: 21814                    
 
-            STATUS: UP                  ATTRIBUTE: ATB                      
+                STATUS: UP                  ATTRIBUTE: ATB                      
 
-             INPUT: ACTIVE                   MODE: DEMAND                   
+                 INPUT: ACTIVE                   MODE: DEMAND                   
 
-            OUTPUT: INACTIVE                 TYPE: 3                        
+                OUTPUT: INACTIVE                 TYPE: 3                        
 
-              NACK:                      CURRENCY: CNY2                     
+                  NACK:                      CURRENCY: CNY2                     
 
-           TICKETS: 0                                                       
+               TICKETS: 0                                                       
 
-     BOARDING PASS: 0            DEFAULT TKT POOL: 6                        
+         BOARDING PASS: 0            DEFAULT TKT POOL: 6                        
 
-                                         STP PIDS:                          
+                                             STP PIDS:                          
 
+                                                                                
 
+                                                                  TKTS          
 
-                                                              TKTS          
+ POOL/DOC TYPE  LAST TKT ##### / STOCK CNT#####   TICKET NUMBER RANGE     AVAIL         
+
+ -------------  -----------------------  ----------------------   -----         
+
+5   / WSO       NONE                     1108600010 / 1108600109  100           
 </code></pre>
 
-<p>POOL/DOC TYPE  LAST TKT # / STOCK CNT#   TICKET NUMBER RANGE     AVAIL         </p>
-
-<hr/>
-
-<p>5   / WSO       NONE                     1108600010 / 1108600109  100           </p>
-
-<h2 id="toc_21">从6号票池获取120个票号</h2>
+<h5 id="toc_18">从6号票池获取120个票号</h5>
 
 <blockquote>
 <p>TN:2/P6/120                                                                    </p>
@@ -561,42 +616,42 @@
 <p>DI:2                                                                           </p>
 </blockquote>
 
-<pre><code>               DEVICE INFORMATION DISPLAY  - DEVICE 2                       
+<pre><code>                   DEVICE INFORMATION DISPLAY  - DEVICE 2                       
 
-         DEVICE STATUS                     DEVICE DEFINITION                
+             DEVICE STATUS                     DEVICE DEFINITION                
 
-         -------------                     -----------------                
+             -------------                     -----------------                
 
-       CONTROL PID: 61946                  OFFICE: SDH888                   
+           CONTROL PID: 61946                  OFFICE: SDH888                   
 
-     CONTROL AGENT: 8888                      PID: 21814                    
+         CONTROL AGENT: 8888                      PID: 21814                    
 
-            STATUS: UP                  ATTRIBUTE: ATB                      
+                STATUS: UP                  ATTRIBUTE: ATB                      
 
-             INPUT: ACTIVE                   MODE: DEMAND                   
+                 INPUT: ACTIVE                   MODE: DEMAND                   
 
-            OUTPUT: INACTIVE                 TYPE: 3                        
+                OUTPUT: INACTIVE                 TYPE: 3                        
 
-              NACK:                      CURRENCY: CNY2                     
+                  NACK:                      CURRENCY: CNY2                     
 
-           TICKETS: 0                                                       
+               TICKETS: 0                                                       
 
-     BOARDING PASS: 0            DEFAULT TKT POOL: 6                        
+         BOARDING PASS: 0            DEFAULT TKT POOL: 6                        
 
-                                         STP PIDS:                          
+                                             STP PIDS:                          
 
+                                                                                
 
+                                                                  TKTS          
 
-                                                              TKTS          
+ POOL/DOC TYPE  LAST TKT ##### / STOCK CNT#####   TICKET NUMBER RANGE     AVAIL         
+
+ -------------  -----------------------  ----------------------   -----         
+
+5   / WSO       NONE                     1108600010 / 1108600109  100           
+
+6   / WSA       NONE                     2334607056 / 2334607175  120
 </code></pre>
-
-<p>POOL/DOC TYPE  LAST TKT # / STOCK CNT#   TICKET NUMBER RANGE     AVAIL         </p>
-
-<hr/>
-
-<p>5   / WSO       NONE                     1108600010 / 1108600109  100           </p>
-
-<p>6   / WSA       NONE                     2334607056 / 2334607175  120</p>
 
 <blockquote>
 <p>XI:2                                                                           </p>
